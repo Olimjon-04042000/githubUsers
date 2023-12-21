@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts css -->
+    <link rel="stylesheet" href="./fonts.css">
+    <!-- Tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-100 h-full">
+    <div class="container w-[47.53vw] m-auto bg-gray-100 pt-12 ">
+        <header class=" flex justify-between mb-9 ">
+            <img src="./images/devfinder.svg" alt="logo">
+            <div class="flex gap-4">
+                <span class=" font-mono text-gray-500">DARK</span>
+                <img src="./images/moon.svg" alt="moon">
+            </div>
+        </header>
+        <form class="flex bg-white mb-6 pt-2.5 pb-2.5 pr-2.5 pl-8 rounded-2xl shadow-lg">
+            <img src="./images/Shape.svg" alt="search">
+            <input type="text" placeholder="Search GitHub username…" class="input text-gray-500 text-lg ml-6 leading-25 w-64 border-0 border-none focus:outline-none focus:border-none hover:border-none input input-bordered max-w-xs" />
+
+            <button class="btn btn-info text-white bg-blue-500 pr-6 pl-6 text-lg rounded-lg ml-72">Search</button>
+
+        </form>
+        <main class="bg-white p-12 flex gap-9 rounded-2xl shadow-lg ">
+            <div class="github-img w-28">
+                <img class=" rounded-full w-28 h-28" src="./images/Bitmap.png" alt="">
+            </div>
+            <div class="github-info  w-3/4 ">
+                <div class="about-user flex justify-between items-center mb-0.5">
+                    <h2 class=" text-3xl font-bold ">The Octocat</h2>
+                    <span class="text-gray-500 leading-6">Joined 25 Jan 2011</span>
+                </div>
+                <p class="username text-blue-600 mb-5">@octocat</p>
+                <p class="bio text-gray-500 leading-6 mb-8">This profile has no bio</p>
+                <div class="user-numbers bg-gray-100 rounded-xl flex justify-between pl-8 pt-4 pr-20 pb-4 mb-9">
+                    <p class=" flex flex-col items-center gap-0">
+                        <span class="text-sky-800">Repos</span>
+                        <span class=" text-2xl font-bold">8</span>
+                    </p>
+                    <p class=" flex flex-col items-center gap-0">
+                        <span class="text-sky-800">Followers</span>
+                        <span class="text-2xl font-bold">3938</span>
+                    </p>
+                    <p class="mr-1 flex flex-col items-center gap-0">
+                        <span class=" text-sky-800">Following</span>
+                        <span class=" text-2xl font-bold">9</span>
+                    </p>
+                </div>
+                <div class="user-link pl-5 ">
+                    <div class="flex  mb-5 ">
+                        <div class="location  w-56 flex gap-5 items-center text-sky-800">
+                            <img src="./images/location.svg" alt="location-icon" class=" w-4 h-12">
+                            <p class="location-name">San Francisco</p>
+                        </div>
+                        <div class="twitter w-56 flex gap-4 items-center text-sky-800">
+                            <img src="./images/twitter.svg" alt="twitter-icon" class=" w-4 h-12">
+                            <p class="twitter-link">Not Available</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="url flex w-56 gap-4 items-center text-sky-800">
+                            <img src="./images/url.svg" alt="url-icon">
+                            <a href="#">https://github.blog</a>
+                        </div>
+                        <div class="github-link w-56 flex gap-4  text-sky-800 ">
+                            <img src="./images/office-building.svg" alt="">
+                            <a href="#">@github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
